@@ -1,0 +1,10 @@
+s = int(raw_input())
+r = raw_input().split()
+page = 0
+n = 0
+while(page<s):
+    page = page+ int(r[n%7])
+
+    if (page>=s):
+        print (n%7)+1
+    n = n+1
